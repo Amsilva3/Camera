@@ -2,6 +2,24 @@
   "expo": {
     "name": "manipulandoCamera",
     "slug": "manipulandoCamera",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow access your camera",
+          "microphonePermission": " Allow your microphone",
+          "photosPermission": "Allow access your photos."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
   }
 }
